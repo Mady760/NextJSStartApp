@@ -15,14 +15,28 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
 
         {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4H3J9V058"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4H3J9V058"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
 
           gtag('config', 'G-B4H3J9V058');
-        </script>
+        </script> */}
+
+
+        <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+
+<Script strategy="lazyOnload">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
       </Head>
       <main>
         <h1>Hello World</h1>

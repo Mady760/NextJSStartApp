@@ -15,14 +15,14 @@ export default function Home() {
       <Head>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-B4H3J9V058`} />
+        src={`https://www.googletagmanager.com/gtag/js?id=G-V8S05C9D93'} />
       <Script strategy="lazyOnload">
         {`
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments)};
          gtag('js', new Date());
 
-         gtag('config', 'G-B4H3J9V058');
+         gtag('config', 'G-V8S05C9D93');
 `}
       </Script>
         <title>Next First App</title>

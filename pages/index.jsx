@@ -13,7 +13,7 @@ export default function Home() {
 
 
       <Head>
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-B4H3J9V058`} />
       <Script strategy="lazyOnload">
@@ -22,7 +22,7 @@ export default function Home() {
          function gtag(){dataLayer.push(arguments)};
          gtag('js', new Date());
 
-         gtag('config', 'G-B4H3J9V058');
+         gtag('config', 'G-B4H3J9V058'); */}
 `}
       </Script>
         <title>Next First App</title>
